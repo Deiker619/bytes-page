@@ -1,3 +1,9 @@
+* {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+}
+
 .flip-card {
   perspective: 1000px; /* Define la perspectiva para el efecto 3D */
 }
@@ -25,11 +31,7 @@
 .flip-card-back {
   transform: rotateY(180deg); /* Inicia girada 180 grados */
 }
-* {
-  font-family: "Poppins";
-  font-weight: 400;
-  font-style: normal;
-}
+
 .parallax {
   background-attachment: fixed; /* Fija la imagen de fondo */
   background-position: center; /* Centra la imagen */

@@ -58,8 +58,8 @@ function stopAutoSlide() {
   clearInterval(autoSlideInterval);
 }
 
-/* // Iniciar Auto Slide al cargar
-startAutoSlide(); */
+// Iniciar Auto Slide al cargar
+startAutoSlide();
 
 // Detener auto-slide al interactuar con botones
 document.querySelectorAll("button").forEach((btn) => {

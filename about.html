@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Byte</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
-      rel="stylesheet"
-    />
+    <link href="src/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="src/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,9 +22,152 @@
       modifiyHeader
     ></load-component>
 
-    <p>home</p>
+    <!-- Mision y visipo -->
+    <section
+      class="grid grid-cols-2 p-8 h-auto gap-6 md:gap-12 mx-auto container"
+    >
+      <div
+        class="flex flex-col items-center col-span-2 md:col-span-1 justify-start md:items-start h-auto md:p-12"
+      >
+        <img
+          src="https://bytescreativos.net/img/iconos/manos.svg"
+          style="height: 129px"
+          alt=""
+        />
+        <h3
+          class="text-center text-md font-semibold tracking-tight leading-none lg:text-xl p-2 text-[#0396D6]"
+        >
+          Visión
+        </h3>
+        <p class="text-justify font-semibold">
+          Ser la empresa líder en servicios de tecnología reconocida por su
+          impacto positivo en el crecimiento de nuestros clientes y la
+          satisfacción total de los usuarios manteniendo la confianza como
+          nuestro valor fundamental.
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center col-span-2 md:col-span-1 md:justify-start md:items-start h-auto md:p-12"
+      >
+        <img
+          src="https://bytescreativos.net/img/iconos/icono%20propositos%201.svg"
+          style="height: 129px"
+          alt=""
+        />
+        <h3
+          class="text-center text-md font-semibold tracking-tight leading-none lg:text-xl p-2 text-[#0396D6]"
+        >
+          Misión
+        </h3>
+        <p class="text-justify font-semibold">
+          Brindar soluciones tecnológicas innovadoras y de calidad con un
+          enfoque en la confianza y la continuidad de nuestros servicios a largo
+          plazo, para consolidarnos como la elección natural de nuestros
+          clientes y el mejor equipo para trabajar.
+        </p>
+      </div>
+    </section>
+    <!-- Sobre nosotros -->
+    <section class="grid grid-cols-2 gap-4 p-8 mx-auto container">
+      <div class="flex col-span-2 md:col-span-1 justify-center items-center">
+        <img
+          src="https://bytescreativos.net/img/contenido/quienessomos.png"
+          class=""
+          alt=""
+        />
+      </div>
+      <div class="flex col-span-2 md:col-span-1 justify-start items-center">
+        <div class="">
+          <h2
+            class="max-w-2xl mb-4 text-3xl text-center tracking-tight md:text-start md:text-6xl xl:text-4xl dark:text-white"
+          >
+            Sobre <br />
+            <span class="text-[#0396D6] font-medium">Nosotros</span>
+          </h2>
+          <p
+            style="text-align: justify"
+            class="font-semibold text-justify lg:mb-8 md:text-md md:text-start dark:text-gray-400"
+          >
+            Somos una compañía de Servicios y Soluciones Tecnológicas, con más
+            de 25 años de trayectoria en el mercado venezolano, Latinoamericano
+            y el Caribe. Contamos con un grupo de profesionales, altamente
+            calificados con una larga experiencia en TI, así como también con
+            aliados y asociados, que permiten cubrir todas las necesidades de
+            empresas grandes y medianas.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Proposito -->
+    <section
+      class="relative w-full h-[450px] grid grid-cols-12 bg-[#0397d6ea] text-white"
+    >
+      <div class="col-span-2 md:col-span-5 ">
+        <div class="relative h-full">
+
+          <img
+            src="https://bytescreativos.net/img/contenido/vision.jpg"
+            style="width: 100%"
+            class="h-full object-cover"
+            alt=""
+          />
+          <div
+            class="absolute top-0 left-0 w-full h-full z-1 bg-[#0397d6ea] opacity-30"
+          ></div>
+        </div>
+      </div>
+      <div
+        class="col-span-2 md:col-span-7 flex justify-center items-center text-center p-2"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nisi
+        eligendi ipsa beatae architecto animi exercitationem minus voluptas
+        voluptate repellendus corporis iure modi, consequuntur quaerat a odio
+        aliquam, tempore totam.
+      </div>
+    </section>
+    <!-- Palabras del fundador -->
+    <section class="grid grid-cols-2 gap-4 p-8 mx-auto container">
+      <div
+        class="flex col-span-2 md:col-span-1 justify-start items-center gap-4"
+      >
+        <div class="">
+          <h2
+            class="max-w-2xl mb-4 text-3xl text-center tracking-tight md:text-start md:text-6xl xl:text-4xl dark:text-white"
+          >
+            Palabras <br />
+            <span class="text-[#0396D6] font-medium">del Fundador</span>
+          </h2>
+          <p
+            style="text-align: justify"
+            class="font-semibold text-justify lg:mb-8 md:text-md md:text-start dark:text-gray-400"
+          >
+            Queridos amigos y colegas,
+          </p>
+          <p
+            style="text-align: justify"
+            class="font-semibold text-justify lg:mb-8 md:text-md md:text-start dark:text-gray-400"
+          >
+            Hace 26 años, yo, Gan Lee, junto con Antonio y Hans, iniciamos
+            juntos las actividades de Bytes Creativos. En aquel entonces, no
+            había una planificación ni estrategia, pero teníamos una clara
+            convicción de que debíamos prepararnos para enfrentar días oscuros y
+            asegurarnos de que amábamos lo que estábamos por comenzar a hacer. Y
+            ese enfoque nos llevó al éxito a todos los niveles...
+          </p>
+        </div>
+      </div>
+      <div class="flex col-span-2 md:col-span-1 justify-center items-center">
+        <img
+          src="https://bytescreativos.net/img/contenido/Foto%202%20quienes%20somos.png"
+          class=""
+          alt=""
+        />
+      </div>
+    </section>
+    <load-component name="footer/footer.html"></load-component>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-  <script src="js/components.js"></script>
-  <script src="js/nav.js"></script>
+  <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+  <script src="src/js/components.js"></script>
+  <script src="src/js/slide.js"></script>
+  <script src="src/js/nav.js"></script>
 </html>

@@ -7,11 +7,12 @@ const observer = new MutationObserver(() => {
       window.addEventListener("scroll", () => {
         if (window.scrollY > 80) {
           navbar.classList.add("bg-white", "shadow-md"); // Cambia el fondo y agrega sombra
-          ul.classList.add('text-blue-500')
+          ul.style.color='#0397d6ea'
+       
           img.src = 'https://bytescreativos.net/img/contenido/Logo%20color.svg'
         } else {
           navbar.classList.remove("bg-white", "shadow-md");
-          ul.classList.remove('text-blue-500')
+          ul.style.color='white'
           img.src= 'https://bytescreativos.net/img/contenido/logobytes.png'
         }
       });

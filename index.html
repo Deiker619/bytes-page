@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Byte</title>
-    <link href="src/output.css" rel="stylesheet">
+    <link href="src/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="src/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,9 +18,13 @@
     <!-- nav -->
     <load-component name="nav.html"></load-component>
     <!-- header -->
-    <load-component name="header/header.html"></load-component>
+    <load-component
+      name="header/header.html"
+      height_header="650px"
+      modifiyHeader
+    ></load-component>
     <load-component name="header/cards-header.html"></load-component>
-    
+
     <!-- others -->
     <section class="bg-white dark:bg-gray-900">
       <div
@@ -60,7 +64,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- Slider  -->
     <section
       class="bg-[#f0faff] dark:bg-gray-900 h-auto md:h-auto flex flex-col p-8"
@@ -430,7 +434,7 @@
         </div>
         <div class="grid grid-cols-3 md:grid-rows-2 gap-x-4">
           <div
-            class="justify-center items-center flex flex-col  col-span-3 md:col-span-1"
+            class="justify-center items-center flex flex-col col-span-3 md:col-span-1"
           >
             <img
               class="h-50 max-w-md hover:scale-110 transition-transform duration-500 ease-in-out"
@@ -746,7 +750,7 @@
         </div>
       </div>
     </section>
-    
+
     <load-component name="footer/footer.html"></load-component>
 
     <script src="node_modules/flowbite/dist/flowbite.min.js"></script>

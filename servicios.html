@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Byte</title>
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <load-component name="nav.html"></load-component>
+    <!-- header -->
+    <load-component
+      name="header/header.html"
+      background_header="url('https://bytescreativos.net/img/contenido/banner%20servicios%201.png')"
+      height_header="550px"
+      modifiyHeader
+    ></load-component>
+    <!-- razones de clientes -->
+    <section class="flex flex-col h-auto p-8">
+      <div class="flex flex-col w-full">
+        
+        <div class="grid grid-cols-2 md:grid-rows-1 gap-x-4">
+         
+          <div
+            class="p-4 flex flex-col justify-center items-center col-span-1 md:col-span-1"
+          >
+            <img
+              class=" max-w-md hover:scale-110 duration-500 ease-in-out"
+              src="https://bytescreativos.net/img/iconos/cursos.svg"
+              alt="image description"
+            />
+            <h3
+              class="flex flex-col justify-center items-center text-center text-md font-semibold tracking-tight leading-none lg:text-xl p-2"
+            >
+              Experticia
+            </h3>
+            <p class="text-center">
+              Nuestro equipo posee conocimientos especializados y habilidades
+              técnicas en el campo de IBM i.
+            </p>
+          </div>
+          <div
+            class="p-4 flex flex-col justify-center items-center col-span-1 md:col-span-1"
+          >
+            <img
+              class="h-50 max-w-md hover:scale-110 transition-transform duration-500 ease-in-out"
+              src="https://bytescreativos.net/img/iconos/mantenimiento.svg"
+              alt="image description"
+            />
+            <h3
+              class="flex flex-col justify-center items-center text-center text-md font-semibold tracking-tight leading-none lg:text-xl p-2"
+            >
+              Adaptabilidad
+            </h3>
+            <p class="text-center">
+              Nos adaptamos a las necesidades y requerimientos específicos de
+              cada cliente.
+            </p>
+          </div>
+          <div
+            class="p-4 flex flex-col justify-center items-center col-span-1 md:col-span-1"
+          >
+            <img
+              class="h-50 max-w-md hover:scale-110 transition-transform duration-500 ease-in-out"
+              src="https://bytescreativos.net/img/iconos/nube.svg"
+              alt="image description"
+            />
+            <h3
+              class="flex flex-col justify-center items-center text-center text-md font-semibold tracking-tight leading-none lg:text-xl p-2"
+            >
+              Servicio de calidad ininterrumpida las 24 horas, los 7 días de la
+              semana y los 365 al año.
+            </h3>
+            <p class="text-center">
+              Garantizamos un servicio continuo y confiable para nuestros
+              clientes
+            </p>
+          </div>
+          <div
+            class="p-4 flex flex-col justify-center items-center col-span-1 md:col-span-1"
+          >
+            <img
+              class="h-50 max-w-md hover:scale-110 transition-transform duration-500 ease-in-out"
+              src="https://bytescreativos.net/img/iconos/documento.svg"
+              alt="image description"
+            />
+            <h3
+              class="flex flex-col justify-center items-center text-center text-md font-semibold tracking-tight leading-none lg:text-xl p-2"
+            >
+              Nos ajustamos a tu presupuesto
+            </h3>
+            <p class="text-center">
+              Ofrecemos soluciones flexibles y opciones personalizadas que se
+              adaptan a los diferentes presupuestos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <load-component name="footer/footer.html"></load-component>
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="src/js/components.js"></script>
+
+    <script src="src/js/nav.js"></script>
+  </body>
+</html>

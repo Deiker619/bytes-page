@@ -18,6 +18,7 @@ class Component extends HTMLElement {
 
   _modifyHeader() {
       const background_header = this.getAttribute("background_header");
+      const height_header = this.getAttribute("height_header");
       const title_header = this.getAttribute("title_header");
       const h1 = this.querySelector("h1");
 
@@ -29,6 +30,11 @@ class Component extends HTMLElement {
       if (img && background_header) {
         img.style.backgroundImage =background_header;
       }
+      const header = document.getElementById("background_header");
+      if (header && height_header) {
+        header.style.height =height_header;
+      }
+
 
       
   }

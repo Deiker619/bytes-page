@@ -39,3 +39,18 @@
   background-repeat: no-repeat; /* Evita que se repita */
   background-size: cover; /* Cubre todo el espacio */
 }
+/* Personalización del punto de la lista */
+ul.custom-bullet li::before {
+  content: ""; /* Carácter del punto */
+  background-color: #3b82f6; /* Color azul de Tailwind (blue-500) */
+  font-size: 1.25rem; /* Tamaño del punto */
+  margin-right: 0.5rem; /* Espacio entre el punto y el texto */
+  display: inline-flex;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: relative;
+  top: -1px;
+
+}

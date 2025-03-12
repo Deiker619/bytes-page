@@ -5,7 +5,7 @@ const observer = new MutationObserver(() => {
     if (navbar) {
       observer.disconnect(); // Detener la observación una vez encontrado el nav
       window.addEventListener("scroll", () => {
-        if (window.scrollY > 80) {
+        if (window.scrollY > 50) {
           navbar.classList.add("bg-white", "shadow-md"); // Cambia el fondo y agrega sombra
           ul.style.color='#0397d6ea'
        

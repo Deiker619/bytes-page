@@ -19,11 +19,17 @@ class Component extends HTMLElement {
   _modifyHeader() {
       const background_header = this.getAttribute("background_header");
       const height_header = this.getAttribute("height_header");
+      const subtitle_header = this.getAttribute("subtitle_header");
       const title_header = this.getAttribute("title_header");
+      const text_header = this.getAttribute("text_header");
       const h1 = this.querySelector("h1");
+      const h2 = this.querySelector("h2");
+      const p = this.querySelector('p')
 
       if (h1 && title_header) {
           h1.textContent = title_header;
+          h2.textContent = subtitle_header;
+          p.textContent = text_header;
       }
 
       const img = document.getElementById("background_header");

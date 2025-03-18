@@ -54,3 +54,84 @@ ul.custom-bullet li::before {
   top: -1px;
 
 }
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-80%);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#title_header.animate,
+#subtitle_header.animate,
+#text_header.animate {
+  animation: slideIn 2.0s ease-out forwards;
+  transition: opacity 0.1s ease-in-out, transform 0.5s ease-out;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideUp.animate {
+  animation: slideUp 2.5s ease-out forwards;
+}
+@keyframes slideUpSection {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideUpSection.animate {
+  animation: slideUpSection 2.0s ease-out forwards;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideLeft.animate {
+  animation: slideLeft 1.0s ease-out forwards;
+}
+@keyframes slideUpDiv {
+  0% {
+    transform: translateY(70%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideUpDiv.animate {
+  animation: slideUpDiv 1.0s ease-out forwards;
+}
+

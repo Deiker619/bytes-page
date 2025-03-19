@@ -132,6 +132,6 @@ ul.custom-bullet li::before {
 }
 
 .slideUpDiv.animate {
-  animation: slideUpDiv 1.0s ease-out forwards;
+  animation: slideUpDiv 2.0s ease-in-out forwards;
 }
 

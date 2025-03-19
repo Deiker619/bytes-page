@@ -52,7 +52,7 @@ const elementInViewport = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       // El elemento está en el viewport
-      /* console.log("Elemento en el viewport:", entry.target.classList); */
+      console.log("Elemento en el viewport:", entry.target.classList);
 
       if (entry.target.classList.contains("section")) {
         entry.target.classList.add("slideUpSection", "animate"); 
@@ -67,7 +67,8 @@ const elementInViewport = new IntersectionObserver((entries) => {
       }
     }
   });
-});
+}
+);
 
 // Seleccionar las secciones con la clase Section
 const sections = document.getElementsByClassName("section");

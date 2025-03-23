@@ -24,7 +24,7 @@ function initHeaderAnimations() {
       conoce_mas.classList.add("animate", "slideUp");
     }, 2000); // Inicia después de 1000ms (500ms después del h1)
   } else {
-    console.log("Elementos no encontrados. Reintentando...");
+    console.log("Elementos no encontrados");
   }
 }
 
@@ -48,6 +48,7 @@ const headerAnimate = new MutationObserver((mutationsList) => {
 headerAnimate.observe(document.body, { childList: true, subtree: true });
 
 // Crear el observer
+
 const elementInViewport = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -61,9 +62,21 @@ const elementInViewport = new IntersectionObserver((entries) => {
       if(entry.target.classList.contains('slideleft')){
         entry.target.classList.add("slideLeft", "animate"); 
       }
+      if(entry.target.classList.contains('slideright')){
+        console.log('slideright')
+        entry.target.classList.add("slideRight", "animate"); 
+      }
 
       if(entry.target.classList.contains('slideupdiv')){
         entry.target.classList.add("slideUpDiv", "animate"); 
+      }
+      if(entry.target.classList.contains('rightToLeftCard')){
+        const items = document.querySelectorAll("#rightToLeftCard > div");
+        items.forEach((item, index) => {
+          setTimeout(() => {
+            item.classList.add('rightToLeftCard', 'animate'); // Aplica las clases necesarias
+          }, index * 300); // 500ms (0.5s) de retraso entre cada uno
+        });
       }
     }
   });
@@ -85,9 +98,19 @@ const img = document.getElementsByClassName("slideleft");
 
 if (img) {
   // Convertir HTMLCollection a Array y observar cada sección
-  console.log(img)
+  //console.log(img)
   Array.from(img).forEach((img) => {
     elementInViewport.observe(img);
+  });
+}
+// Selecciona el elemento con la clase slideright
+const  slideright= document.getElementsByClassName("slideright");
+
+if (slideright) {
+  // Convertir HTMLCollection a Array y observar cada sección
+  //console.log(img)
+  Array.from(slideright).forEach((slideright) => {
+    elementInViewport.observe(slideright);
   });
 }
 // Selecciona el div con la clase slideupdiv
@@ -95,8 +118,19 @@ const div = document.getElementsByClassName("slideupdiv");
 
 if (div) {
   // Convertir HTMLCollection a Array y observar cada sección
-  console.log(div)
+  //console.log(div)
   Array.from(div).forEach((div) => {
     elementInViewport.observe(div);
+  });
+}
+// Selecciona el div con la clase slideupdiv
+const rightToLeftCard = document.getElementsByClassName("rightToLeftCard");
+
+if (rightToLeftCard) {
+  // Convertir HTMLCollection a Array y observar cada sección
+  console.log(rightToLeftCard)
+  //
+  Array.from(rightToLeftCard).forEach((rightToLeftCard) => {
+    elementInViewport.observe(rightToLeftCard);
   });
 }

@@ -1,0 +1,20 @@
+<!-- Boton flotante -->
+
+<div data-dial-init class="fixed end-6 z-10 bottom-6 group" id="wsButton">
+  <div
+    id="speed-dial-menu-default"
+    class="md:flex flex-col items-center hidden mb-4 space-y-2"
+  ></div>
+  <button
+    type="button"
+    data-dial-toggle="speed-dial-menu-default"
+    aria-controls="speed-dial-menu-default"
+    aria-expanded="false"
+    style="background-image: url('src/img/ws.png')"
+    class="flex items-center justify-center text-white rounded-full w-14 h-14 hover:bg-blue-800"
+  >
+    <img src="src/img/ws.png" class="h-full w-full object-contain" alt="" />
+
+    <span class="sr-only">Open actions menu</span>
+  </button>
+</div>

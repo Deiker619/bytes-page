@@ -134,7 +134,23 @@ ul.custom-bullet li::before {
 .slideUpDiv.animate {
   animation: slideUpDiv 2.0s ease-in-out forwards;
 }
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
+.slideRight.animate {
+  animation: slideRight 2.0s ease-in-out forwards;
+}
+
+
+/* Animacion para cambiar el fondo del gradiente */
 @keyframes bg-change {
   0% {
     background-color: #0397d68e ; /* Azul */
@@ -149,4 +165,48 @@ ul.custom-bullet li::before {
 
 .animate-bg-change {
   animation: bg-change 4s infinite alternate; /* Duración: 2 segundos, se repite infinitamente */
+}
+
+/* Animacion para cambiar el color del texto  */
+@keyframes mask-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#animated-text {
+  background-image: linear-gradient(
+    90deg,
+    #38bdf8, /* sky-400 */
+    #10b981, /* emerald-600 */
+    #7238f8
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: mask-animation 1.5s ease infinite;
+}
+
+/* animaciones de capacitacion */
+    /* animaciones de cursos mas populares*/
+@keyframes rightToLeftCard {
+  0% {
+    transform: translateX(1000%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.rightToLeftCard.animate {
+  animation: rightToLeftCard 1s ease-out forwards;
 }

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Byte</title>
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <load-component name="nav.html"></load-component>
+    <!-- header -->
+    <load-component
+      name="header/header.html"
+      background_header="url('https://bytescreativos.net/img/contenido/Bannaer-soluciones%201.png')"
+      title_header="Hacemos que la tecnología"
+      subtitle_header="sea un potenciador de tú negocio"
+      text_header="Configuramos soluciones tecnologicas integrales"
+      height_header="550px"
+      modifiyHeader
+    ></load-component>
+    <load-component name="whatsappButton/whatsappButton.html"></load-component>
+    <!-- Configuramos soluciones tecnológicas -->
+    <section class="grid grid-cols-2 gap-4 p-8 mx-auto container">
+      <div class="flex col-span-2 md:col-span-1 justify-center items-center">
+        <img
+          src="https://bytescreativos.net/img/contenido/quienessomos.png"
+          class=""
+          alt=""
+        />
+      </div>
+      <div class="flex col-span-2 md:col-span-1 justify-start items-center">
+        <div class="">
+          <h2
+            class="max-w-2xl mb-4 text-3xl text-center tracking-tight md:text-start md:text-6xl xl:text-4xl "
+          >
+            Configuramos <br />
+            <span class="text-[#0396D6] font-medium"
+              >soluciones tecnológicas
+            </span>
+          </h2>
+          <p
+            style="text-align: justify"
+            class="font-normal text-justify lg:mb-8 md:text-md md:text-start "
+          >
+            Hacemos que la tecnología sea un potenciador del negocio de nuestros
+            clientes. Configuramos soluciones tecnológicas integrales, acordes
+            al presupuesto y al alcance esperado
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Formulario -->
+    <section
+      style="height: 450px"
+      id="background_header"
+      class="parallax mb-4 bg-center relative w-full bg-no-repeat bg-cover bg-[url('https://bytescreativos.net/img/contenido/coafondo.png')] bg-blend-multiply"
+    >
+      <div
+        class="absolute top-0 left-0 w-full h-full z-1 bg-[#0397d6ea] opacity-80"
+      ></div>
+
+      <div
+        class="mx-auto max-w-screen-xl text-center py-24 lg:py-40 flex flex-col md:flex-row relative"
+      >
+        <div class="flex justify-center md:flex-shrink-0 md:w-[40%]">
+          <h2
+            class="max-w-2xl text-white text-center font-semibold mb-4 text-3xl flex tracking-tight md:text-start md:text-6xl xl:text-4xl"
+          >
+            Registrate
+          </h2>
+        </div>
+        <div class="flex justify-start flex-col flex-grow p-4">
+          <div class="flex flex-col gap-0">
+            <h2
+              class="max-w-2xl flex flex-col text-center text-white font-normal mb-4 text-3xl tracking-tight md:text-start md:text-2xl xl:text-4xl"
+            >
+              Desarrollamos soluciones <span> Tecnológicas para empresas</span>
+            </h2>
+
+            <load-component name="form_registrate/form.html"></load-component>
+            <div class="w-full flex gap-4 justify-start items-center pt-2">
+              <label class="inline-flex items-center cursor-pointer">
+                <input type="checkbox" class="hidden peer" />
+                <span
+                  class="h-6 w-6 border rounded-md bg-white peer-checked:bg-[#1bd41b]"
+                ></span>
+              </label>
+              <label class="text-left text-white">
+                Acepto recibir a mi correo electrónico toda la información,
+                actualizaciones y novedades.
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- nuestras herramientas -->
+    <section class="flex flex-col gap-6 p-8 w-full">
+      <div class="flex flex-col justify-center items-center">
+        <div class="inline-flex">
+          <h2
+            class="max-w-2xl mb-4 text-3xl text-center tracking-tight md:text-start md:text-6xl xl:text-4xl "
+          >
+            Nuestras
+            <span class="text-[#0396D6] font-medium">Herramientas </span>
+          </h2>
+        </div>
+        <div class="">
+          <p class="text-center font-normal">
+            En Bytes Creativos, nos enorgullece presentarte nuestra amplia gama
+            de herramientas especializadas. Con más de 20 años de experiencia en
+            el mercado venezolano, ofrecemos soluciones innovadoras y eficientes
+            para optimizar tus operaciones en entornos IBM i.
+          </p>
+        </div>
+      </div>
+      <!-- imagenes y herramientas -->
+      <div class="mx-auto container h-auto flex flex-col md:p-12">
+        <div class="flex flex-col bg-blue-100 h-full">
+          <!-- imagen y text -->
+          <div class="w-full flex">
+            <div class="hidden md:flex flex-shrink-0 w-[30%] relative">
+              <div class="relative">
+                <img
+                  src="https://bytescreativos.net/img/carrusel/imagen_1.jpg"
+                  class="w-full h-full"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="flex flex-grow bg-[#17ADCC] flex-col p-2 gap-4">
+              <h2
+                class="text-white text-center font-semibold text-md flex tracking-tight md:text-start md:text-xl xl:text-3xl"
+              >
+                Instalación/Upgrade
+              </h2>
+              <p class="text-white">
+                La herramienta de Instalación/Upgrade de Bytes Creativos te
+                permite llevar a cabo la instalación y actualización de tus
+                sistemas IBM i de manera eficiente y confiable. Nuestro equipo
+                de expertos se encarga de garantizar que todos los componentes
+                estén correctamente instalados y configurados, asegurando un
+                óptimo rendimiento de tu infraestructura.
+              </p>
+            </div>
+          </div>
+          <!--imagen y text reverse-->
+          <div class="w-full flex flex-row-reverse">
+            <div
+              class="hidden md:flex flex-shrink-0 w-[30%] bg-green-100 relative"
+            >
+              <div class="relative">
+                <img
+                  src="https://bytescreativos.net/img/carrusel/imagen_2.png"
+                  class="w-full"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="flex flex-grow bg-[#EDF4F5] text-[#0396D6] flex-col p-2 gap-4"
+            >
+              <h2
+                class="text-center font-semibold text-md flex tracking-tight md:text-start md:text-xl xl:text-3xl "
+              >
+                MIMIX Share
+              </h2>
+              <p>
+                La herramienta de Instalación/Upgrade de Bytes Creativos te
+                permite llevar a cabo la instalación y actualización de tus
+                sistemas IBM i de manera eficiente y confiable. Nuestro equipo
+                de expertos se encarga de garantizar que todos los componentes
+                estén correctamente instalados y configurados, asegurando un
+                óptimo rendimiento de tu infraestructura.
+              </p>
+            </div>
+          </div>
+          <!-- imagen y text -->
+          <div class="w-full flex">
+            <div class="hidden md:flex flex-shrink-0 w-[30%] relative">
+              <div class="relative">
+                <img
+                  src="https://bytescreativos.net/img/carrusel/imagen_3.png"
+                  class="w-full h-full"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="flex flex-grow bg-[#0396D6] text-[#f2f4f5] flex-col p-2 gap-4"
+            >
+              <h2
+                class="text-white text-center font-semibold text-md flex tracking-tight md:text-start md:text-xl xl:text-3xl "
+              >
+                GoAnywhere MFT
+              </h2>
+              <p class="text-white">
+                GoAnywhere MFT es una poderosa herramienta de transferencia de
+                archivos gestionada por Bytes Creativos. Con esta solución,
+                puedes garantizar la seguridad y el cumplimiento de tus
+                transacciones de datos en entornos IBM i. Nuestro equipo te
+                ayuda a establecer y gestionar flujos de trabajo seguros y
+                eficientes para la transferencia de archivos, minimizando los
+                riesgos y optimizando los procesos.
+              </p>
+            </div>
+          </div>
+          <!--imagen y text reverse-->
+          <div class="w-full flex flex-row-reverse">
+            <div
+              class="hidden md:flex flex-shrink-0 w-[30%] bg-green-100 relative"
+            >
+              <div class="relative">
+                <img
+                  src="https://bytescreativos.net/img/carrusel/imagen_4.png"
+                  class="w-full h-full"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="flex flex-grow bg-[#EDF4F5] flex-col p-2 gap-4">
+              <h2
+                class="text-center text-[#0396D6] font-semibold text-md flex tracking-tight md:text-start md:text-xl xl:text-3xl "
+              >
+                CRYPTO COMPLETE
+              </h2>
+              <p class="text-black">
+                CRYPTO COMPLETE de Bytes Creativos es una herramienta integral
+                de encriptación de datos diseñada específicamente para entornos
+                IBM i. Esta solución te permite proteger la confidencialidad y
+                la integridad de tus datos sensibles, cumpliendo con los
+                estándares de seguridad más exigentes. Nuestro equipo de
+                especialistas te brinda el soporte necesario para implementar y
+                administrar correctamente esta herramienta.
+              </p>
+            </div>
+          </div>
+          <!-- imagen y text -->
+          <div class="w-full flex">
+            <div class="hidden md:flex flex-shrink-0 w-[30%] relative">
+              <div class="relative">
+                <img
+                  src="https://bytescreativos.net/img/carrusel/imagen_5.jpg"
+                  class="w-full h-full"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="flex flex-grow bg-[#2B9D80] text-[#f2f4f5] flex-col p-2 gap-4"
+            >
+              <h2
+                class="text-white text-center font-semibold text-md flex tracking-tight md:text-start md:text-xl xl:text-3xl "
+              >
+                X-Analysis Advisor
+              </h2>
+              <p class="text-white">
+                X-Analysis Advisor es una herramienta de análisis y optimización
+                de aplicaciones IBM i ofrecida por Bytes Creativos. Esta
+                solución te permite evaluar el rendimiento y la eficiencia de
+                tus aplicaciones, identificar áreas de mejora y obtener
+                recomendaciones concretas para optimizar tu código. Nuestro
+                equipo de expertos te guía en la implementación de las mejores
+                prácticas y en la maximización del potencial de tus
+                aplicaciones.
+              </p>
+            </div>
+          </div>
+          <!--imagen y text reverse-->
+          <div class="w-full flex flex-row-reverse">
+            <div
+              class="hidden md:flex flex-shrink-0 w-[30%] bg-green-100 relative"
+            >
+              <div class="relative">
+                <img
+                  src="https://bytescreativos.net/img/carrusel/imagen_6.jpg"
+                  class="w-full h-full"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="flex flex-grow bg-[#EDF4F5] flex-col p-2 gap-4">
+              <h2
+                class="text-center text-[#0396D6] font-semibold text-md flex tracking-tight md:text-start md:text-xl xl:text-3xl "
+              >
+                Spool Mail
+              </h2>
+              <p class="text-black">
+                Spool Mail de Bytes Creativos es una herramienta diseñada para
+                simplificar y automatizar la gestión de tus spools en entornos
+                IBM i. Con esta solución, puedes enviar, recibir y archivar tus
+                documentos en formato spool de manera eficiente y segura.
+                Nuestro equipo te brinda asesoría especializada para aprovechar
+                al máximo esta herramienta y optimizar tus flujos de trabajo.
+              </p>
+            </div>
+          </div>
+          <!-- imagen y text -->
+          <div class="w-full flex">
+            <div class="hidden md:flex flex-shrink-0 w-[30%] relative">
+              <div class="relative">
+                <img
+                  src="https://bytescreativos.net/img/carrusel/imagen_7.jpg"
+                  class="w-full h-full"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="flex flex-grow bg-[#56B14B] text-[#f2f4f5] flex-col p-2 gap-4"
+            >
+              <h2
+                class="text-white text-center font-semibold text-md flex tracking-tight md:text-start md:text-xl xl:text-3xl "
+              >
+                Datamaker™
+              </h2>
+              <p class="text-white">
+                Datamaker™ de Bytes Creativos es una potente herramienta de
+                generación de datos de prueba para entornos IBM i. Con esta
+                solución, puedes crear rápidamente conjuntos de datos realistas
+                y representativos, lo que te permite probar y validar tus
+                aplicaciones sin comprometer datos reales. Nuestro equipo te
+                proporciona el soporte necesario para implementar y utilizar
+                eficazmente esta herramienta.
+              </p>
+            </div>
+          </div>
+          <!--imagen y text reverse-->
+          <div class="w-full flex flex-row-reverse">
+            <div
+              class="hidden md:flex flex-shrink-0 w-[30%] bg-green-100 relative"
+            >
+              <div class="relative">
+                <img
+                  src="https://bytescreativos.net/img/carrusel/imagen_8.png"
+                  class="w-full h-full"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="flex flex-grow bg-[#EDF4F5] flex-col p-2 gap-4">
+              <h2
+                class="text-center text-[#0396D6] font-semibold text-md flex tracking-tight md:text-start md:text-xl xl:text-3xl "
+              >
+                TD / OMS
+              </h2>
+              <p class="text-black">
+                TD / OMS (Order Management System) es una herramienta de gestión
+                de pedidos ofrecida por Bytes Creativos. Con esta solución,
+                puedes administrar de manera eficiente tus procesos de pedidos y
+                controlar el flujo de trabajo en tu negocio. Nuestro equipo te
+                ayuda a implementar esta herramienta personalizada según tus
+                necesidades y a maximizar la eficiencia de tu gestión de
+                pedidos.
+              </p>
+            </div>
+          </div>
+          <!-- imagen y text -->
+          <div class="w-full flex">
+            <div class="hidden md:flex flex-shrink-0 w-[30%] relative">
+              <div class="relative">
+                <img
+                  src="https://bytescreativos.net/img/carrusel/imagen_9.jpg"
+                  class="w-full h-full"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="flex flex-grow bg-[#0396D6] text-[#f2f4f5] flex-col p-2 gap-4"
+            >
+              <h2
+                class="text-white text-center font-semibold text-md flex tracking-tight md:text-start md:text-xl xl:text-3xl "
+              >
+                ZABBIX-Grafana
+              </h2>
+              <p class="text-white">
+                ZABBIX-Grafana de Bytes Creativos es una combinación poderosa de
+                herramientas de monitoreo y visualización para entornos IBM i.
+                Esta solución te permite supervisar y analizar el rendimiento de
+                tus sistemas y aplicaciones en tiempo real, ayudándote a tomar
+                decisiones informadas y a optimizar la capacidad de tu
+                infraestructura. Nuestro equipo te guía en la implementación y
+                configuración de esta herramienta para obtener resultados
+                precisos y útiles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <load-component name="footer/footer.html"></load-component>
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="src/js/components.js"></script>
+    <script src="src/js/animaciones.js"></script>
+    <script src="src/js/whatsApp.js"></script>
+    <script src="src/js/nav.js"></script>
+  </body>
+</html>

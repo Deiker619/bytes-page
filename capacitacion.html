@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Byte</title>
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <load-component name="nav.html"></load-component>
+    <!-- header -->
+    <load-component
+      name="header/header.html"
+      background_header="url('https://img.freepik.com/foto-gratis/hombre-disfruta-rascacielos-ciudad-noche_482257-91205.jpg?t=st=1742743191~exp=1742746791~hmac=a5f6c079f55b639fc7035001085072e358b79ca3d3caf0039f1d71dd1800167c&w=996')"
+      title_header="Potencia tus habilidades con nuestra "
+      subtitle_header="capacitación especializada"
+      text_header="Un grupo de profesionales altamente calificados"
+      header_height="300px"
+      modifiyHeader
+    ></load-component>
+
+    <load-component name="whatsappButton/whatsappButton.html"></load-component>
+
+    <!-- Informacion de los cursos -->
+    <section class="h-auto w-full p-3 gap-2 grid grid-cols-12">
+      <div
+        class="flex flex-col justify-evenly items-center col-span-12 md:col-span-7 p-2 gap-2 border-r relative overflow-hidden"
+      >
+        <h1
+          class="mb-4 text-3xl text-center font-semibold text-gray-900 md:text-5xl lg:text-6xl slideLeft animate"
+        >
+          <span
+            id="animated-text"
+            class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
+            >Aprende, crece y destaca
+          </span>
+          en tu profesión. ¡Inscríbete ahora!
+        </h1>
+        <div class="grid grid-cols-2 gap-2 w-full h-auto slideright">
+          <!-- comienzo del card A-->
+          <div
+            class="md:col-span-1 col-span-2 flex flex-col justify-center items-center border-r"
+          >
+            <div class="flex flex-col">
+              <div class="flex justify-center items-center p-2">
+                <h2
+                  class="max-w-2xl text-3xl text-center tracking-tight md:text-center md:text-2xl"
+                >
+                  Nuestros talleres IN COMPANY<br />
+                  <span class="text-[#0396D6] font-medium flex flex-col">
+                    Presencial / On line en vivo.
+                    <span class="text-sm font-semibold"
+                      >Soluciones de Capacitación a Medida para tu Empresa</span
+                    >
+                  </span>
+                </h2>
+              </div>
+              <div class="p-2">
+                <p
+                  class="w-full font-light text-gray-500 text-start md:text-lg md:text-center lg:text-md"
+                >
+                  Transforma a tu equipo con programas de formación diseñados
+                  para tus necesidades específicas. Impulsa la innovación, la
+                  productividad y el desarrollo de habilidades clave
+                </p>
+              </div>
+              <div class="p-2 flex justify-center items-center">
+                <a
+                  href="#"
+                  class="inline-flex items-start justify-center px-5 py-3 text-base font-medium text-center text-white border bg-[#0397d6ea] rounded-lg hover:bg-[#219ed3] focus:ring-4 focus:ring-gray-100"
+                >
+                  Solicitar cotización
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- comienzo del card B-->
+          <div
+            class="md:col-span-1 col-span-2 flex flex-col justify-center items-center"
+          >
+            <div class="flex flex-col">
+              <div class="flex justify-center items-center p-2">
+                <h2
+                  class="max-w-2xl text-3xl text-center tracking-tight md:text-center md:text-2xl"
+                >
+                  Cursos on line (MOODLE)<br />
+                  <span class="text-[#0396D6] font-medium flex flex-col">
+                    Aprende a tu Ritmo con Nuestros Cursos Online
+                  </span>
+                </h2>
+              </div>
+              <div class="p-2">
+                <p
+                  class="w-full font-light text-gray-500 text-start md:text-lg md:text-center lg:text-md"
+                >
+                  Accede a una amplia variedad de cursos diseñados por expertos.
+                  Desarrolla tus habilidades desde cualquier lugar y en
+                  cualquier momento
+                </p>
+              </div>
+              <div class="p-2 flex justify-center items-center">
+                <a
+                  href="#"
+                  class="inline-flex items-start justify-center px-5 py-3 text-base font-medium text-center text-white border bg-[#0397d6ea] rounded-lg hover:bg-[#219ed3] focus:ring-4 focus:ring-gray-100"
+                >
+                  Mas información / inscribete ahora
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Div inferior (descargar catalogo de cursos) -->
+        <div class="w-full col-span-4 h-auto p-2">
+          <div class="grid grid-cols-4 gap-4">
+            <div class="col-span-1 flex flex-col">
+              <div class="w-full bg-yellow-50">
+                <img src="src/img/libro.jpg" class="h-full" alt="" />
+              </div>
+            </div>
+            <div class="col-span-3 flex flex-col justify-center items-center">
+              <div class="w-full flex flex-col gap-2">
+                <h2
+                  class="text-lg text-center text-[#0396D6] font-semibold tracking-tight md:text-start md:ml-3 md:text-2xl"
+                >
+                  DESCARGA EL CATALOGO DE CURSOS Y TALLERES
+                </h2>
+                <h2
+                  class="text-lg text-center tracking-tight md:text-center md:text-2xl"
+                >
+                  DESCUBRE COMO PODEMOS AYUDARTE
+                </h2>
+                <p
+                  class="w-full font-light text-gray-500 text-start md:text-xl md:text-center lg:text-md"
+                >
+                  Descarga el Catalogo de Cursos 2025
+                </p>
+                <div class="flex justify-center items-center">
+                  <a
+                    href="src/pdf/pdf.pdf"
+                    class="inline-flex items-start justify-center px-5 py-3 text-base font-medium text-center text-white border bg-[#0397d6ea] rounded-lg hover:bg-[#219ed3] focus:ring-4 focus:ring-gray-100"
+                  >
+                    Descargar Catalogo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- lateral -->
+      <div class="flex flex-col col-span-12 md:col-span-5 gap-4">
+        <div class="flex flex-col gap-2">
+          <div class="flex items-center justify-center rounded-lg">
+            <div class="relative w-full rounded-lg overflow-hidden">
+              <img
+                class="w-full h-56 object-cover"
+                src="https://img.freepik.com/foto-gratis/hombre-tiro-medio-gafas-vr_23-2149126949.jpg?t=st=1742692882~exp=1742696482~hmac=63078cfd3824f5a593f2faf5c5e3276776d433107994a6513a92d86e5227f70e&w=1380"
+                alt="1"
+              />
+
+              <div class="group">
+                <div
+                  class="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1"
+                >
+                  <p
+                    class="text-2xl relative text-white font-semibold opacity-100 group-hover:opacity-0"
+                  >
+                    Curso de IBM Avanzado
+                  </p>
+                </div>
+                <!-- Filtro azul -->
+                <div
+                  class="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1 bg-[#2B9D80] opacity-40 group-hover:opacity-0"
+                >
+                  <p
+                    class="text-2xl relative text-white opacity-100 font-semibold"
+                  >
+                    Curso de IBM Avanzado
+                  </p>
+                </div>
+
+                <!-- Mensaje -->
+                <div
+                  class="opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-600 absolute inset-x-0 bottom-0 w-full h-16 z-10"
+                >
+                  <div
+                    class="backdrop-blur-sm w-full h-full p-2 flex flex-col justify-center items-center text-center"
+                  >
+                    <div class="flex">
+                      <load-component name="pages/capacitacion/buttonSuscripcion.html"></load-component>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="h-auto bg-white rounded-lg">
+              <div class="grid grid-cols-12 h-full">
+                <div class="col-span-2 h-full">
+                  <!-- Foto perfil -->
+                  <div class="flex items-start justify-end mr-2 h-full">
+                    <!-- imagen -->
+                    <img
+                      id="profile_image"
+                      class="h-12 rounded-full"
+                      src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                      alt="Rounded avatar"
+                    />
+                  </div>
+                </div>
+                <div class="col-span-10 h-full">
+                  <div class="flex flex-col">
+                    <div class="flex flex-col">
+                      <!-- title -->
+                      <div class="flex gap-2">
+                        <p
+                          id="name_perfil"
+                          class="font-semibold text-justify md:text-md md:text-start text-[#000006]"
+                        >
+                          <!-- Nombre del comentario -->
+                          EDUARDO CARUSO
+                        </p>
+                        <!-- name comment -->
+                        <span class="text-sm text-gray-500">
+                          <div class="">
+                            <p>• 1er</p>
+                          </div>
+                        </span>
+                      </div>
+                      <!-- subtitle -->
+                      <div class="flex flex-col gap-1">
+                        <div class="">
+                          <p id="title_perfil" class="text-sm font-normal">
+                            <!-- Titulo de la persona -->
+                            IT SPECIALIST IBM AS400 en Venezolano de Crédito
+                          </p>
+                        </div>
+                        <div class="">
+                          <p id="date_perfil" class="text-sm text-gray-500">
+                            <!-- Fecha del comentario -->
+                            7 de marzo de 2018, EDUARDO fue cliente de Bytes
+                          </p>
+                        </div>
+                        <!-- comentario -->
+                        <div class="flex w-full gap-2">
+                          <img class="w-6 h-6" src="src/img/ojo.png" alt="" />
+                          <p id="" class="text-sm text-gray-500">
+                            Todos los comentarios de LinkedIn
+                          </p>
+                        </div>
+                      </div>
+                      <!-- Comentario -->
+                      <div class="mt-3">
+                        <p
+                          id="comment_perfil"
+                          class="text-sm font-normal w-[90%]"
+                        >
+                          <!-- Comentario -->
+                          Buenos dias 100% recomendado personal altamente
+                          calificado para todas las soluciones de iSeries Os400
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="h-px my-2 bg-gray-200 border-0" />
+        <div class="flex flex-col gap-2">
+          <div class="flex items-center justify-center rounded-lg">
+            <div class="relative w-full rounded-lg overflow-hidden">
+              <img
+                class="w-full h-56 object-cover"
+                src="https://img.freepik.com/foto-gratis/codificacion-programas-informaticos-pantalla_53876-138060.jpg?t=st=1742693221~exp=1742696821~hmac=cb143a3f6070f5d7c91787ee3d2fa3b57c10cfa03965b01d561820e55b1cf520&w=826"
+                alt="1"
+              />
+
+              <div class="group">
+                <div
+                  class="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1"
+                >
+                  <p
+                    class="text-2xl relative text-white font-semibold opacity-100 group-hover:opacity-0"
+                  >
+                    Curso de Programación Web
+                  </p>
+                </div>
+                <!-- Filtro azul -->
+                <div
+                  class="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1 bg-[#2B9D80] opacity-40 group-hover:opacity-0"
+                >
+                  <p
+                    class="text-2xl relative text-white opacity-100 font-semibold"
+                  >
+                    Curso de Programación Web
+                  </p>
+                </div>
+
+                <!-- Mensaje -->
+                <div
+                  class="opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-600 absolute inset-x-0 bottom-0 w-full h-16 z-10"
+                >
+                  <div
+                    class="backdrop-blur-sm w-full h-full p-2 flex flex-col justify-center items-center text-center"
+                  >
+                    <div class="flex">
+                      <load-component name="pages/capacitacion/buttonSuscripcion.html"></load-component>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="h-auto bg-white rounded-lg">
+              <div class="grid grid-cols-12 h-full">
+                <div class="col-span-2 h-full">
+                  <!-- Foto perfil -->
+                  <div class="flex items-start justify-end mr-2 h-full">
+                    <!-- imagen -->
+                    <img
+                      id="profile_image"
+                      class="h-12 rounded-full"
+                      src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                      alt="Rounded avatar"
+                    />
+                  </div>
+                </div>
+                <div class="col-span-10 h-full">
+                  <div class="flex flex-col">
+                    <div class="flex flex-col">
+                      <!-- title -->
+                      <div class="flex gap-2">
+                        <p
+                          id="name_perfil"
+                          class="font-semibold text-justify md:text-md md:text-start text-[#000006]"
+                        >
+                          <!-- Nombre del comentario -->
+                          Yaneth Pinilla
+                        </p>
+                        <!-- name comment -->
+                        <span class="text-sm text-gray-500">
+                          <div class="">
+                            <p>• 1er</p>
+                          </div>
+                        </span>
+                      </div>
+                      <!-- subtitle -->
+                      <div class="flex flex-col gap-1">
+                        <div class="">
+                          <p id="title_perfil" class="text-sm font-normal">
+                            <!-- Titulo de la persona -->
+                            QA Analyst | Scrum Master Professional Certificated
+                            SMPC | Scrum Product Owner Professional Certified
+                            SPOC | Scrum Developer Professional Certified SDPC |
+                            kanban TKP | Information Security Specialist
+                          </p>
+                        </div>
+                        <div class="">
+                          <p id="date_perfil" class="text-sm text-gray-500">
+                            <!-- Fecha del comentario -->
+                            9 de Agosto de 2017, Yaneth fue cliente de Bytes
+                          </p>
+                        </div>
+                        <!-- comentario -->
+                        <div class="flex w-full gap-2">
+                          <img class="w-6 h-6" src="src/img/ojo.png" alt="" />
+                          <p id="" class="text-sm text-gray-500">
+                            Todos los comentarios de LinkedIn
+                          </p>
+                        </div>
+                      </div>
+                      <!-- Comentario -->
+                      <div class="mt-3">
+                        <p
+                          id="comment_perfil"
+                          class="text-sm font-normal w-[90%]"
+                        >
+                          <!-- Comentario -->
+                          La Empresa Bytes Creativos es una empresa de
+                          Soluciones óptimas, enfocadas principalmente en el
+                          Iseries (AS400) y cuentan con personal altamente
+                          calificado, sus servicios se basan en: Evaluacion de
+                          seguridad IBM i, Consultoría, DB2 for i Analisis,
+                          mejoras y buenas practicas<!-- ; Analisis y planificación
+                          de capacidades; Evaluación de Seguridad para HCM,
+                          Respaldos de reducción de ventana y automatización
+                          BRMS, Desarrollo Seguro, Especializaciones en materia
+                          de Seguridad de la Información. -->
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cursos populares -->
+    <div
+      class="md:hidden flex-col col-span-12 md:col-span-4 border-gray-200 bg-white p-2 shadow-sm "
+    >
+      <div class="flex flex-col justify-center items-center w-full h-full">
+        <div class="flex flex-col">
+          <h1
+            class="text-2xl text-center font-extrabold text-gray-900  md:text-5xl lg:text-6xl"
+          >
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r to-blue-500 from-lime-500"
+              >Inscribete en nuestros
+            </span>
+            cursos mas populares.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <section class="flex flex-col w-full p-2">
+      <section
+        class="py-8 antialiased relative  md:py-8 border-t w-full grid grid-cols-12 gap-4 h-[600px] overflow-x-hidden"
+      >
+        <div
+          class="md:flex flex-col hidden col-span-12 md:col-span-4 border-gray-200 bg-white p-6 shadow-sm "
+        >
+          <div class="flex flex-col justify-center items-center w-full h-full">
+            <div class="flex flex-col">
+              <h1
+                class="mb-4 text-3xl text-center font-extrabold text-gray-900  md:text-5xl lg:text-6xl"
+              >
+                <span
+                  class="text-transparent bg-clip-text bg-gradient-to-r to-blue-500 from-lime-500"
+                  >Inscribete en nuestros
+                </span>
+                cursos mas populares.
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute md:top-28 top-36 w-full h-64 bg-[#0396D6] blur-3xl md:left-[500px] left-0 right-0 bottom-0 animate-bg-change"
+        ></div>
+        <div
+          class="mx-auto flex col-span-12 md:col-span-8 flex-col relative w-[100%] 2xl:px-0 border-gray-200 p-6 shadow-sm overflow-x-auto"
+        >
+          <div
+            class="flex absolute gap-4 top-0 left-0 right-0 bottom-0 md:w-[1500px] w-[1500px] rightToLeftCard"
+            id="rightToLeftCard"
+          >
+            <div
+              class="opacity-0 md:w-[320px] w-[450px] rounded-lg flex flex-col justify-center border border-gray-200 bg-white shadow-sm "
+            >
+              <div class="h-56 w-full p-2">
+                <a href="#">
+                  <img
+                    class="mx-auto h-52 object-cover rounded-lg"
+                    src="https://i.blogs.es/3bc738/ibm-portada-1/1366_2000.jpeg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="pt-6 p-6">
+                <a
+                  href="#"
+                  class="text-lg font-semibold leading-tight text-gray-900 hover:underline "
+                  >Operaciones Basicas de Sistema IBM i</a
+                >
+
+                <div class="mt-2 flex items-center gap-2">
+                  <div class="flex items-center">
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+                  </div>
+
+                  <p class="text-sm font-medium text-gray-900 ">
+                    5.0
+                  </p>
+                  <p
+                    class="text-sm font-medium text-gray-500 "
+                  >
+                    (455)
+                  </p>
+                </div>
+
+                <ul class="mt-2 flex items-center gap-4">
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="h-4 w-4 text-gray-500 "
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 7h6l2 4m-8-4v8m0-8V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v9h2m8 0H9m4 0h2m4 0h2v-4m0 0h-5m3.5 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm-10 0a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"
+                      />
+                    </svg>
+                    <p
+                      class="text-sm font-medium text-gray-500 "
+                    >
+                      Fast Delivery
+                    </p>
+                  </li>
+
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="h-4 w-4 text-gray-500 "
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        d="M8 7V6c0-.6.4-1 1-1h11c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1h-1M3 18v-7c0-.6.4-1 1-1h11c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1H4a1 1 0 0 1-1-1Zm8-3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+                      />
+                    </svg>
+                    <p
+                      class="text-sm font-medium text-gray-500 "
+                    >
+                      Best Price
+                    </p>
+                  </li>
+                </ul>
+
+                <div class="mt-4 mb-0 flex items-center justify-between gap-4">
+                  <load-component name="pages/capacitacion/buttonSuscripcion.html"></load-component>
+                </div>
+              </div>
+            </div>
+            <div
+              class="opacity-0 md:w-[320px] w-[450px] rounded-lg flex flex-col justify-center border border-gray-200 bg-white shadow-sm "
+            >
+              <div class="h-56 p-2 w-full">
+                <a href="#">
+                  <img
+                    class="mx-auto h-52 object-cover rounded-lg"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWcVU2OD-Jc6Q2weaiU6h4-YGW-wz794gx-w&s"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="pt-6 p-6">
+                <a
+                  href="#"
+                  class="text-lg font-semibold leading-tight text-gray-900 hover:underline "
+                  >Operaciones Avanzadas de Sistema IBM i</a
+                >
+
+                <div class="mt-2 flex items-center gap-2">
+                  <div class="flex items-center">
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+                  </div>
+
+                  <p class="text-sm font-medium text-gray-900 ">
+                    5.0
+                  </p>
+                  <p
+                    class="text-sm font-medium text-gray-500 "
+                  >
+                    (455)
+                  </p>
+                </div>
+
+                <ul class="mt-2 flex items-center gap-4">
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="h-4 w-4 text-gray-500 "
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 7h6l2 4m-8-4v8m0-8V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v9h2m8 0H9m4 0h2m4 0h2v-4m0 0h-5m3.5 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm-10 0a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"
+                      />
+                    </svg>
+                    <p
+                      class="text-sm font-medium text-gray-500 "
+                    >
+                      Fast Delivery
+                    </p>
+                  </li>
+
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="h-4 w-4 text-gray-500 "
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        d="M8 7V6c0-.6.4-1 1-1h11c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1h-1M3 18v-7c0-.6.4-1 1-1h11c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1H4a1 1 0 0 1-1-1Zm8-3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+                      />
+                    </svg>
+                    <p
+                      class="text-sm font-medium text-gray-500 "
+                    >
+                      Best Price
+                    </p>
+                  </li>
+                </ul>
+
+                <div class="mt-4 mb-0 flex items-center justify-between gap-4">
+                  <load-component name="pages/capacitacion/buttonSuscripcion.html"></load-component>
+                </div>
+              </div>
+            </div>
+            <div
+              class="opacity-0 md:w-[320px] w-[450px] rounded-lg flex flex-col justify-center border border-gray-200 bg-white shadow-sm "
+            >
+              <div class="h-56 p-2 w-full">
+                <a href="#">
+                  <img
+                    class="mx-auto h-52 object-cover rounded-lg"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBK6ej533ynrv3oZVVSEWEhhR9v1gvpIV1Zg&s"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="pt-6 p-6">
+                <a
+                  href="#"
+                  class="text-lg font-semibold leading-tight text-gray-900 hover:underline "
+                  >Curso de Administracion de IBM I</a
+                >
+
+                <div class="mt-2 flex items-center gap-2">
+                  <div class="flex items-center">
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+                  </div>
+
+                  <p class="text-sm font-medium text-gray-900 ">
+                    5.0
+                  </p>
+                  <p
+                    class="text-sm font-medium text-gray-500 "
+                  >
+                    (455)
+                  </p>
+                </div>
+
+                <ul class="mt-2 flex items-center gap-4">
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="h-4 w-4 text-gray-500 "
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 7h6l2 4m-8-4v8m0-8V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v9h2m8 0H9m4 0h2m4 0h2v-4m0 0h-5m3.5 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm-10 0a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"
+                      />
+                    </svg>
+                    <p
+                      class="text-sm font-medium text-gray-500 "
+                    >
+                      Fast Delivery
+                    </p>
+                  </li>
+
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="h-4 w-4 text-gray-500 "
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        d="M8 7V6c0-.6.4-1 1-1h11c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1h-1M3 18v-7c0-.6.4-1 1-1h11c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1H4a1 1 0 0 1-1-1Zm8-3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+                      />
+                    </svg>
+                    <p
+                      class="text-sm font-medium text-gray-500 "
+                    >
+                      Best Price
+                    </p>
+                  </li>
+                </ul>
+
+                <div class="mt-4 mb-0 flex items-center justify-between gap-4">
+                  <load-component name="pages/capacitacion/buttonSuscripcion.html"></load-component>
+                </div>
+              </div>
+            </div>
+            <div
+              class="opacity-0 md:w-[320px] w-[450px] rounded-lg flex flex-col justify-center border border-gray-200 bg-white shadow-sm "
+            >
+              <div class="h-56 p-2 w-full">
+                <a href="#">
+                  <img
+                    class="mx-auto h-52 object-cover rounded-lg"
+                    src="https://prensariotila.com/wp-content/uploads/2021/11/IBM-Security.jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="pt-6 p-6">
+                <a
+                  href="#"
+                  class="text-lg font-semibold leading-tight text-gray-900 hover:underline "
+                  >Curso de Seguridad avanzada de IBMi</a
+                >
+
+                <div class="mt-2 flex items-center gap-2">
+                  <div class="flex items-center">
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+                  </div>
+
+                  <p class="text-sm font-medium text-gray-900 ">
+                    5.0
+                  </p>
+                  <p
+                    class="text-sm font-medium text-gray-500 "
+                  >
+                    (455)
+                  </p>
+                </div>
+
+                <ul class="mt-2 flex items-center gap-4">
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="h-4 w-4 text-gray-500 "
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 7h6l2 4m-8-4v8m0-8V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v9h2m8 0H9m4 0h2m4 0h2v-4m0 0h-5m3.5 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm-10 0a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"
+                      />
+                    </svg>
+                    <p
+                      class="text-sm font-medium text-gray-500 "
+                    >
+                      Fast Delivery
+                    </p>
+                  </li>
+
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="h-4 w-4 text-gray-500 "
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        d="M8 7V6c0-.6.4-1 1-1h11c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1h-1M3 18v-7c0-.6.4-1 1-1h11c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1H4a1 1 0 0 1-1-1Zm8-3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+                      />
+                    </svg>
+                    <p
+                      class="text-sm font-medium text-gray-500 "
+                    >
+                      Best Price
+                    </p>
+                  </li>
+                </ul>
+
+                <div class="mt-4 mb-0 flex items-center justify-between gap-4">
+                  <load-component name="pages/capacitacion/buttonSuscripcion.html"></load-component>
+                </div>
+              </div>
+            </div>
+            <div
+              class="opacity-0 md:w-[320px] w-[450px] rounded-lg flex flex-col justify-center border border-gray-200 bg-white shadow-sm "
+            >
+              <div class="h-56 w-full p-2">
+                <a href="#">
+                  <img
+                    class="mx-auto h-52 object-cover rounded-lg"
+                    src="https://i.blogs.es/3bc738/ibm-portada-1/1366_2000.jpeg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="pt-6 p-6">
+                <a
+                  href="#"
+                  class="text-lg font-semibold leading-tight text-gray-900 hover:underline "
+                  >Operaciones Basicas de Sistema IBM i</a
+                >
+
+                <div class="mt-2 flex items-center gap-2">
+                  <div class="flex items-center">
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+
+                    <svg
+                      class="h-4 w-4 text-yellow-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M13.8 4.2a2 2 0 0 0-3.6 0L8.4 8.4l-4.6.3a2 2 0 0 0-1.1 3.5l3.5 3-1 4.4c-.5 1.7 1.4 3 2.9 2.1l3.9-2.3 3.9 2.3c1.5 1 3.4-.4 3-2.1l-1-4.4 3.4-3a2 2 0 0 0-1.1-3.5l-4.6-.3-1.8-4.2Z"
+                      />
+                    </svg>
+                  </div>
+
+                  <p class="text-sm font-medium text-gray-900 ">
+                    5.0
+                  </p>
+                  <p
+                    class="text-sm font-medium text-gray-500 "
+                  >
+                    (455)
+                  </p>
+                </div>
+
+                <ul class="mt-2 flex items-center gap-4">
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="h-4 w-4 text-gray-500 "
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 7h6l2 4m-8-4v8m0-8V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v9h2m8 0H9m4 0h2m4 0h2v-4m0 0h-5m3.5 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm-10 0a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"
+                      />
+                    </svg>
+                    <p
+                      class="text-sm font-medium text-gray-500 "
+                    >
+                      Fast Delivery
+                    </p>
+                  </li>
+
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="h-4 w-4 text-gray-500 "
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        d="M8 7V6c0-.6.4-1 1-1h11c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1h-1M3 18v-7c0-.6.4-1 1-1h11c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1H4a1 1 0 0 1-1-1Zm8-3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+                      />
+                    </svg>
+                    <p
+                      class="text-sm font-medium text-gray-500 "
+                    >
+                      Best Price
+                    </p>
+                  </li>
+                </ul>
+
+                <div class="mt-4 mb-0 flex items-center justify-between gap-4">
+                  <load-component name="pages/capacitacion/buttonSuscripcion.html"></load-component>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Mas cursos -->
+    <section
+      class="bg-white h-auto md:h-[650px] p-4  relative parallax mb-4 bg-center overflow-hidden w-full bg-no-repeat bg-cover bg-[url('https://bytescreativos.net/img/contenido/coafondo.png')] bg-blend-multiply"
+    >
+      <div
+        class="absolute top-0 left-0 w-full h-full z-1 bg-[#0397d6ea] opacity-80"
+      ></div>
+      <div
+        class="absolute top-100 w-full h-72 bg-white blur-3xl opacity-50 left-0 right-0 bottom-[-20px]"
+      ></div>
+      <div class="px-4 lg:px-6 relative">
+        <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+          <h2
+            class="mb-4 text-4xl tracking-tight font-semibold text-white "
+          >
+            Mas cursos..
+          </h2>
+          <p class="font-light text-white lg:mb-16 sm:text-xl">
+            ¡Explora más! Descubre los cursos que tenemos preparados para ti y
+            sigue ampliando tus conocimientos.
+          </p>
+        </div>
+        <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-4 w-full">
+          <div
+            class="flex flex-col col-span-1 bg-white p-3 gap-3 shadow-xl rounded-lg group"
+          >
+            <div class="flex flex-col overflow-hidden">
+              <img
+                src="https://openmainframeproject.org/wp-content/uploads/sites/14/2021/02/cobol.jpg"
+                class="w-full h-48 rounded-lg object-cover group-hover:scale-110 transition-all duration-300"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col">
+              <div class="flex flex-col w-full">
+                <h3 class="text-xl font-semibold">CURSO DE COBOL</h3>
+                <p class="text-md text-gray-500">
+                  COBOL es un lenguaje de programación que se utiliza para crear
+                  programas que procesan datos.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <div class="flex">
+                <load-component name="pages/capacitacion/buttonSuscripcion.html"></load-component>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col col-span-1 bg-white p-3 gap-3 shadow-xl rounded-lg group"
+          >
+            <div class="flex flex-col overflow-hidden">
+              <img
+                src="https://ilimit.com/wp-content/uploads/2020/06/arquitecturadistribuidasoftware.jpg"
+                class="w-full h-48 rounded-lg object-cover group-hover:scale-110 transition-all duration-300"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col">
+              <div class="flex flex-col w-full">
+                <h3 class="text-xl font-semibold">
+                  Programación Centralizada y Distribuida
+                </h3>
+                <p class="text-md text-gray-500">
+                  Aprende de a programar de manera segura y distribuida
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <div class="flex justify-ce">
+                <load-component name="pages/capacitacion/buttonSuscripcion.html"></load-component>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col col-span-1 bg-white p-3 gap-3 shadow-xl rounded-lg group"
+          >
+            <div class="flex flex-col overflow-hidden">
+              <img
+                src="https://dbdb.io/media/logos/ibm-db2-vertical.svg"
+                class="w-full h-48 rounded-lg object-cover group-hover:scale-110 transition-all duration-300"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col">
+              <div class="flex flex-col w-full">
+                <h3 class="text-xl font-semibold">DB2 for i</h3>
+                <p class="text-md text-gray-500">
+                  Domina DB2 for i y aprende a gestionar bases de datos de
+                  manera eficiente en sistemas IBM i.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <div class="flex justify-ce">
+                <load-component name="pages/capacitacion/buttonSuscripcion.html"></load-component>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col col-span-1 bg-white p-3 gap-3 shadow-xl rounded-lg group"
+          >
+            <div class="flex flex-col overflow-hidden">
+              <img
+                src="https://www.r2i.ca/wp-content/uploads/2021/04/09_Trucs-Astuces_BRMS.png"
+                class="w-full h-48 rounded-lg object-cover group-hover:scale-110 transition-all duration-300"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col">
+              <div class="flex flex-col w-full">
+                <h3 class="text-xl font-semibold">BRMS</h3>
+                <p class="text-md text-gray-500">
+                  Aprende a utilizar BRMS para automatizar y optimizar procesos
+                  de gestión de medios en entornos IBM i.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <div class="flex justify-ce">
+                <load-component name="pages/capacitacion/buttonSuscripcion.html"></load-component>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Graduados -->
+    <load-component name="pages/capacitacion/sectionGraduados.html"></load-component>
+
+    <load-component name="footer/footer.html"></load-component>
+
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="src/js/components.js"></script>
+    <script src="src/js/nav.js"></script>
+    <script src="src/js/animaciones.js"></script>
+    <script src="src/js/whatsApp.js"></script>
+  </body>
+</html>

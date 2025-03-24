@@ -1,5 +1,6 @@
+
 * {
-  font-family: "Poppins";
+
   font-weight: 400;
   font-style: normal;
 }
@@ -37,4 +38,208 @@
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que se repita */
   background-size: cover; /* Cubre todo el espacio */
+}
+/* Personalización del punto de la lista */
+ul.custom-bullet li::before {
+  content: ""; /* Carácter del punto */
+  background-color: #3b82f6; /* Color azul de Tailwind (blue-500) */
+  font-size: 1.25rem; /* Tamaño del punto */
+  margin-right: 0.5rem; /* Espacio entre el punto y el texto */
+  display: inline-flex;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: relative;
+  top: -1px;
+
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-80%);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#title_header.animate,
+#subtitle_header.animate,
+#text_header.animate {
+  animation: slideIn 2.0s ease-out forwards;
+  transition: opacity 0.1s ease-in-out, transform 0.5s ease-out;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideUp.animate {
+  animation: slideUp 2.5s ease-out forwards;
+}
+@keyframes slideUpSection {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideUpSection.animate {
+  animation: slideUpSection 2.0s ease-out forwards;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideLeft.animate {
+  animation: slideLeft 1.0s ease-out forwards;
+}
+@keyframes slideUpDiv {
+  0% {
+    transform: translateY(70%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideUpDiv.animate {
+  animation: slideUpDiv 2.0s ease-in-out forwards;
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideRight.animate {
+  animation: slideRight 2.0s ease-in-out forwards;
+}
+
+
+/* Animacion para cambiar el fondo del gradiente */
+@keyframes bg-change {
+  0% {
+    background-color: #0397d68e ; /* Azul */
+  }
+  50%{
+    background-color: #2fcaf188 ; /* Azul */
+  }
+  100% {
+    background-color: #83cc168e ; /* Verde */
+  }
+}
+
+.animate-bg-change {
+  animation: bg-change 4s infinite alternate; /* Duración: 2 segundos, se repite infinitamente */
+}
+
+/* Animacion para cambiar el color del texto  */
+@keyframes mask-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#animated-text {
+  background-image: linear-gradient(
+    90deg,
+    #38bdf8, /* sky-400 */
+    #10b981, /* emerald-600 */
+    #7238f8
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: mask-animation 1.5s ease infinite;
+}
+
+/* animaciones de capacitacion */
+    /* animaciones de cursos mas populares*/
+@keyframes rightToLeftCard {
+  0% {
+    transform: translateX(1000%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.rightToLeftCard.animate {
+  animation: rightToLeftCard 1s ease-out forwards;
+}
+@keyframes navUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+    display: none;
+  }
+}
+
+.navUp.animate {
+  animation: navUp 1.5s ease-out forwards;
+}
+@keyframes navButton {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navUp.animate {
+  animation: navUp 0.5s ease-out forwards;
+}
+.navButton.animate {
+  animation: navButton 0.5s ease-out forwards;
 }

@@ -2,10 +2,10 @@ let currentIndex = 0;
 const carousel = document.getElementById("carousel");
 const items = document.querySelectorAll("#carousel > div");
 const totalItems = items.length;
-const visibleItems = 3; // Siempre mostrar 3 elementos
+const visibleItems = 3.5; // Siempre mostrar 3 elementos
 const itemWidth = items[0].offsetWidth; // Ancho de un elemento
 let autoSlideInterval;
-
+console.log(itemWidth);
 // Actualiza la posición del carrusel
 function updateCarousel() {
   carousel.style.transition = "transform 0.5s ease-in-out";
@@ -16,6 +16,7 @@ function updateCarousel() {
 function nextSlide() {
   if (currentIndex < totalItems - visibleItems) {
     currentIndex++;
+    //console.log(currentIndex);
   } else {
     // Reinicia al inicio SIN espacios en blanco
     currentIndex = 0;

@@ -16,7 +16,7 @@ function updateCarousel() {
 function nextSlide() {
   if (currentIndex < totalItems - visibleItems) {
     currentIndex++;
-    console.log(currentIndex);
+    //console.log(currentIndex);
   } else {
     // Reinicia al inicio SIN espacios en blanco
     currentIndex = 0;

@@ -210,3 +210,36 @@ ul.custom-bullet li::before {
 .rightToLeftCard.animate {
   animation: rightToLeftCard 1s ease-out forwards;
 }
+@keyframes navUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+    display: none;
+  }
+}
+
+.navUp.animate {
+  animation: navUp 1.5s ease-out forwards;
+}
+@keyframes navButton {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navUp.animate {
+  animation: navUp 0.5s ease-out forwards;
+}
+.navButton.animate {
+  animation: navButton 0.5s ease-out forwards;
+}

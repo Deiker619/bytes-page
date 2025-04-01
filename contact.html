@@ -38,66 +38,78 @@
               Formulario de Contacto
             </h2>
 
-            <form>
+            <form id="contactForm">
               <div class="grid gap-6 mb-6 md:grid-cols-2">
-                <div>
+                <div class="flex flex-col">
                   <label
-                    for="first_name"
+                    for="name"
                     class="block mb-2 text-md font-medium text-[#0396D6] "
                     >Nombre*</label
                   >
                   <input
                     type="text"
-                    id="first_name"
+                    id="name"
                     class="bg-gray-50 border border-[#767676] text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
                     required
                   />
+                  <div>
+                    <p id="nameError" class="hidden mt-2 text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oh, snapp!</span> Some error message.</p>
+                  </div>
                 </div>
-                <div>
+                <div class="flex flex-col">
                   <label
-                    for="last_name"
+                    for="email"
                     class="block mb-2 text-md font-medium text-[#0396D6] "
-                    >Email</label
+                    >Email*</label
                   >
                   <input
-                    type="text"
-                    id="last_name"
+                    type="email"
+                    id="email"
                     class="bg-gray-50 border border-[#767676] text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                     required
                   />
+                  <div>
+                    <p id="emailError" class="hidden mt-2 text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oh, snapp!</span> Some error message.</p>
+                  </div>
                 </div>
-                <div>
+                <div class="flex flex-col">
                   <label
-                    for="company"
+                    for="subject"
                     class="block mb-2 text-md font-medium text-[#0396D6] "
                     >Asunto</label
                   >
                   <input
                     type="text"
-                    id="company"
+                    id="subject"
                     class="bg-gray-50 border border-[#767676] text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                     required
                   />
+                  <div>
+                    <p id="subjectError" class="hidden mt-2 text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oh, snapp!</span> Some error message.</p>
+                  </div>
                 </div>
 
-                <div>
+                <div class="flex flex-col">
                   <label
-                    for="visitors"
+                    for="numberContact"
                     class="block mb-2 text-md font-medium text-[#0396D6] "
-                    >Numero de contacto</label
+                    >Número de contacto</label
                   >
                   <input
-                    type="number"
-                    id="visitors"
+                    type="text"
+                    id="numberContact"
                     class="bg-gray-50 border border-[#767676] text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                    placeholder=""
+                    placeholder="+581234567891"
                     required
                   />
+                  <div>
+                    <p id="numberContactError" class="hidden mt-2 text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oh, snapp!</span> Some error message.</p>
+                  </div>
                 </div>
               </div>
-              <div class="mb-6">
+              <div class="mb-6 flex flex-col">
                 <label
-                  for="email"
+                  for="message"
                   class="block mb-2 text-md font-medium text-[#0396D6] "
                   >Mensaje</label
                 >
@@ -105,8 +117,11 @@
                   id="message"
                   rows="4"
                   class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 border border-[#767676] focus:ring-blue-500 focus:border-blue-500"
-                  placeholder="Write your thoughts here..."
+                  placeholder="Escribe tu mensaje..."
                 ></textarea>
+                <div>
+                  <p id="messageError" class="hidden mt-2 text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oh, snapp!</span> Some error message.</p>
+                </div>
               </div>
 
               <button
@@ -273,11 +288,12 @@
     </section>
     <load-component name="footer/footer.html"></load-component>
     <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="src/js/components.js"></script>
     <script src="src/js/whatsApp.js"></script>
-    <script src="src/js/slide.js"></script>
     <script src="src/js/nav.js"></script>
     <script src="src/js/animaciones.js"></script>
+    <script src="src/js/contactForm.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>

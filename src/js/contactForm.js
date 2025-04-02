@@ -24,7 +24,7 @@ form.addEventListener("submit", function (event) {
     name: name.value.trim(),
     email: email.value.trim(),
     subject: subject.value.trim(),
-    telf: numberContact.value.trim(),
+    phone: numberContact.value.trim(),
     message: message.value.trim(),
   };
 
@@ -45,7 +45,7 @@ form.addEventListener("submit", function (event) {
     ? clearError(subject)
     : showError(subject, subjectValidate.messageError);
 
-  const phoneValidate = validatePhone(formContact.telf);
+  const phoneValidate = validatePhone(formContact.phone);
   phoneValidate.status === true
     ? clearError(telf)
     : showError(telf, phoneValidate.messageError);
@@ -87,9 +87,10 @@ function validateEmail(email) {
 }
 
 function validatePhone(phone) {
+  console.log(phone)
   const regexWithoutSpaces = /^\+\d{1,3}\d{7,}$/;
   if (regexWithoutSpaces.test(phone)) {
-    formContact.telf = formatPhoneNumber(phone); //formatea el telefono
+    formContact.phone = formatPhoneNumber(phone); //formatea el telefono
     return { status: true };
   } else {
     return {
@@ -168,6 +169,7 @@ async function sendDataContact(url, data = null) {
     const response = await fetch(url, options);
 
     if (!response.ok) {
+      console.log(response)
       return Toast.fire({
         icon: "error",
         title: "Se produjo un error en la petición",
@@ -176,11 +178,11 @@ async function sendDataContact(url, data = null) {
     
 
     const result = await response.json();
-   // console.log("Respuesta del servidor:", result);
+    //console.log("Respuesta del servidor:", result);
     return Toast.fire({
       icon: "success",
       title: `Gracias ${formContact.name}, se ha enviado tu mensaje`,
-    });;
+    });
   } catch (error) {
     console.error("Se produjo un error:", error.message);
     return { success: false, error: error.message };

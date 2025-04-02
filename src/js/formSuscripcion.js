@@ -2,7 +2,7 @@ const formObserver = new MutationObserver((mutationsList) => {
   for (let mutation of mutationsList) {
     if (mutation.type === "childList") {
       const formSubscription = document.getElementById("formSuscripcion");
-      //console.log(formSubscription);
+
       if (formSubscription) {
         formObserver.disconnect(); // Deja de observar una vez que se encuentra
         onFormAvailable(formSubscription); // Llama al callback con el formulario encontrado
@@ -13,8 +13,10 @@ const formObserver = new MutationObserver((mutationsList) => {
 
 // Esta es la función que se ejecuta cuando el formulario está disponible
 function onFormAvailable(form) {
-  console.log("El formulario ya está disponible:", form);
+  const check = document.getElementById("checkform");
+  console.log(check);
 
+  
   // Ahora puedes trabajar con `form` sin necesidad de estar dentro del condicional
   form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -32,6 +34,12 @@ function onFormAvailable(form) {
         title: "Debe colocar un email valido",
       });
     }
+    if (!check.checked) {
+      return Toast.fire({
+        icon: "error",
+        title: "Debe aceptar recibir actualizaciones y novedades",
+      });
+    }
     sendSuscripcion(formData);
   });
 
@@ -42,7 +50,7 @@ function onFormAvailable(form) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       };
-     // console.log(options);
+      // console.log(options);
       const url =
         "https://bytespagenewsletter-production.up.railway.app/api/v1/newsletters/";
 
@@ -69,9 +77,9 @@ function onFormAvailable(form) {
 
       //const data = await response.json();
       return Toast.fire({
-            icon: "success",
-            title: `${formData.email} Se ha registrado exitosamente`
-          });
+        icon: "success",
+        title: `${formData.email} Se ha registrado exitosamente`,
+      });
     } catch (error) {
       console.log("Ocurrio un error ");
     }

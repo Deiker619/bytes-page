@@ -1363,22 +1363,6 @@ video {
   background-color: rgb(254 252 232 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[url\(\'https\:\/\/bytescreativos\.net\/img\/contenido\/coafondo\.png\'\)\] {
-  background-image: url('https://bytescreativos.net/img/contenido/coafondo.png');
-}
-
-.bg-\[url\(\'https\:\/\/bytescreativos\.net\/img\/contenido\/hero-images\.png\'\)\] {
-  background-image: url('https://bytescreativos.net/img/contenido/hero-images.png');
-}
-
-.bg-\[url\(\'https\:\/\/bytescreativos\.net\/img\/contenido\/imagen_4\.png\'\)\] {
-  background-image: url('https://bytescreativos.net/img/contenido/imagen_4.png');
-}
-
-.bg-\[url\(\'https\:\/\/bytescreativos\.net\/img\/contenido\/teclado-soluciones\.png\'\)\] {
-  background-image: url('https://bytescreativos.net/img/contenido/teclado-soluciones.png');
-}
-
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }

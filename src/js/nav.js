@@ -17,11 +17,11 @@ const observer = new MutationObserver(() => {
             element.style.backgroundColor = '#0397d6ea'
           });
        
-          img.src = 'https://bytescreativos.net/img/contenido/Logo%20color.svg'
+          img.src = 'src/img/contenido/Logo%20color.svg'
         } else {
           navbar.classList.remove("bg-white", "shadow-md");
           ul.style.color='white'
-          img.src= 'https://bytescreativos.net/img/contenido/logobytes.png'
+          img.src= 'src/img/contenido/logobytes.png'
           span.forEach(element => {
             element.style.backgroundColor = 'white'
           });

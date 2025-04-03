@@ -42,7 +42,7 @@ const observer = new MutationObserver(() => {
           menu.classList.remove('navButton', 'animate')
           menu.classList.add('navUp', 'animate')
         }
-        console.log(menu)
+        //console.log(menu)
       })
     }
   });

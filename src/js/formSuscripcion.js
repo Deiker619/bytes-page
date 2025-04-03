@@ -14,7 +14,7 @@ const formObserver = new MutationObserver((mutationsList) => {
 // Esta es la función que se ejecuta cuando el formulario está disponible
 function onFormAvailable(form) {
   const check = document.getElementById("checkform");
-  console.log(check);
+ // console.log(check);
 
   
   // Ahora puedes trabajar con `form` sin necesidad de estar dentro del condicional

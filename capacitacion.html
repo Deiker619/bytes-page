@@ -57,7 +57,7 @@
                 >
                   Nuestros talleres IN COMPANY<br />
                   <span class="text-[#0396D6] font-medium flex flex-col">
-                    Presencial / On line en vivo.
+                    Presencial / Online en vivo.
                     <span class="text-sm font-semibold"
                       >Soluciones de Capacitación a Medida para tu Empresa</span
                     >
@@ -73,7 +73,10 @@
                   productividad y el desarrollo de habilidades clave
                 </p>
               </div>
-              <div class="p-2 flex justify-center items-center" onclick="toggleBox()">
+              <div
+                class="p-2 flex justify-center items-center cursor-pointer"
+                onclick="toggleBox()"
+              >
                 <a
                   class="inline-flex items-start justify-center px-5 py-3 text-base font-medium text-center text-white border bg-[#0397d6ea] rounded-lg hover:bg-[#219ed3] focus:ring-4 focus:ring-gray-100"
                 >
@@ -85,14 +88,14 @@
 
           <!-- comienzo del card B-->
           <div
-            class="md:col-span-1 col-span-2 flex flex-col justify-center items-center"
+            class="md:col-span-1 col-span-2 flex flex-col justify-between items-stretch"
           >
-            <div class="flex flex-col">
+            <div class="flex flex-col justify-evenly items-end">
               <div class="flex justify-center items-center p-2">
                 <h2
                   class="max-w-2xl text-3xl text-center tracking-tight md:text-center md:text-2xl"
                 >
-                  Cursos on line (MOODLE)<br />
+                  Cursos online<br />
                   <span class="text-[#0396D6] font-medium flex flex-col">
                     Aprende a tu Ritmo con Nuestros Cursos Online
                   </span>
@@ -107,14 +110,14 @@
                   cualquier momento
                 </p>
               </div>
-              <div class="p-2 flex justify-center items-center">
+              <!-- <div class="p-2 flex justify-center items-center">
                 <a
                   href="#"
                   class="inline-flex items-start justify-center px-5 py-3 text-base font-medium text-center text-white border bg-[#0397d6ea] rounded-lg hover:bg-[#219ed3] focus:ring-4 focus:ring-gray-100"
                 >
                   Mas información / inscribete ahora
                 </a>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -1194,7 +1197,7 @@
           >
             <div class="flex flex-col overflow-hidden">
               <img
-                src="https://ilimit.com/wp-content/uploads/2020/06/arquitecturadistribuidasoftware.jpg"
+                src="src/img/contenido/curso.jpg"
                 class="w-full h-48 rounded-lg object-cover group-hover:scale-110 transition-all duration-300"
                 alt=""
               />
@@ -1279,9 +1282,18 @@
       name="pages/capacitacion/sectionGraduados.html"
     ></load-component>
 
-   
-    <div id="box" class="opacity-0 transition-opacity duration-500 ease-linear hidden bg-blue-500 text-white p-4">
-      <div id="layer-opacity" class=" backdrop-blur-sm dark:bg-gray-900/80 fixed inset-0 z-40"></div>
+    <div
+      id="box"
+      class="opacity-0 relative transition-opacity duration-500 ease-linear hidden bg-blue-500 text-white p-4"
+    >
+      <div
+        id="layer-opacity"
+        onclick="toggleBox()"
+        class="backdrop-blur-sm dark:bg-gray-900/80 fixed inset-0 z-40"
+      >
+       
+       
+      </div>
 
       <!-- Main modal -->
       <div
@@ -1291,7 +1303,7 @@
         style="display: flex"
         class="show overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
       >
-        <div class="relative p-4 w-full max-w-md max-h-full">
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
           <!-- Modal content -->
           <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
             <!-- Modal header -->
@@ -1299,7 +1311,7 @@
               class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200"
             >
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                Create New Product
+                Solicitar Capacitación
               </h3>
               <button
                 type="button"
@@ -1332,66 +1344,114 @@
                   <label
                     for="name"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Name</label
+                    >Nombre completo</label
                   >
                   <input
                     type="text"
                     name="name"
                     id="name"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                    placeholder="Type product name"
+                    placeholder="Nombres y apellidos"
                     required=""
                   />
                 </div>
                 <div class="col-span-2 sm:col-span-1">
                   <label
-                    for="price"
+                    for="email"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Price</label
+                    >Correo Electrónico</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    placeholder="mail@example.com"
+                    required=""
+                  />
+                </div>
+                <div class="col-span-2 sm:col-span-1">
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Teléfono de Contacto</label
                   >
                   <input
                     type="number"
-                    name="price"
-                    id="price"
+                    name="phone"
+                    id="phone"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                    placeholder="$2999"
+                    placeholder=""
                     required=""
                   />
                 </div>
-                <div class="col-span-2 sm:col-span-1">
+                <div class="col-span-2">
                   <label
                     for="category"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Category</label
+                    >Tipo de Programa deseado</label
                   >
                   <select
                     id="category"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                   >
-                    <option selected="">Select category</option>
-                    <option value="TV">TV/Monitors</option>
-                    <option value="PC">PC</option>
-                    <option value="GA">Gaming/Console</option>
-                    <option value="PH">Phones</option>
+                    <option selected="">Taller in Company (Presencial)</option>
+                    <option value="TV">
+                      Taller in Company (En linea en vivo)
+                    </option>
+                    <option value="PC">Curso en linea (Moodle)</option>
                   </select>
                 </div>
                 <div class="col-span-2">
                   <label
-                    for="description"
+                    for="category"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Product Description</label
+                    >Áreas de Interés</label
                   >
-                  <textarea
-                    id="description"
-                    rows="4"
-                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Write product description here"
-                  ></textarea>
+                  <select
+                    id="category"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  >
+                    <option>
+                      Operaciones Básicas y Avanzadas del Sistema IBM i
+                    </option>
+                    <option>Programación Básica y Avanzada ILE RPG</option>
+                    <option>DB2/400 Implementación y Codificación</option>
+                    <option>
+                      Manejo de Seguridad y Administración en IBM i
+                    </option>
+                    <option>Administración de BRMS</option>
+                    <option>IBM WebSphere Studio</option>
+                    <option>Administración de Storage IBM</option>
+                    <option>
+                      Taller Básico y Avanzado para la Administración de Mimix
+                    </option>
+                    <option>Básico y Avanzado de AIX</option>
+                    <option>
+                      Administración de Bases de Datos (Oracle, SQL Server, DB2,
+                      MySQL, MariaDB)
+                    </option>
+                    <option>
+                      Instalación y Administración de Zabbix, Grafana, OTRS
+                    </option>
+                    <option>
+                      Test de Intrusión y Análisis de Vulnerabilidades
+                    </option>
+                    <option>
+                      Wazuh - Solución Integral para la Detección de Amenazas
+                    </option>
+                    <option>Administración de Linux</option>
+                    <option>Seguridad de Redes e Información</option>
+                    <option>
+                      Administración de Productos y Plataformas Microsoft
+                    </option>
+                    <option>Virtualización con VMware o Hyper-V</option>
+                  </select>
                 </div>
               </div>
               <button
                 type="submit"
-                class="text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                class="text-white inline-flex items-center bg-[#0396D6] hover:bg-[#219ed3] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 <svg
                   class="me-1 -ms-1 w-5 h-5"
@@ -1405,7 +1465,7 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                Add new product
+                  Solicitar cotización
               </button>
             </form>
           </div>
@@ -1418,21 +1478,23 @@
     <script src="src/js/nav.js"></script>
     <script src="src/js/animaciones.js"></script>
     <script src="src/js/whatsApp.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script>
-      let visible = false
+      let visible = false;
       function toggleBox() {
         const box = document.getElementById("box");
-        visible= !visible
-        console.log(visible)
+        visible = !visible;
+        console.log(visible);
 
         if (visible) {
           box.classList.remove("hidden");
-          setTimeout(() => box.classList.add("opacity-100"), 10); // retraso para activar transición
+          setTimeout(() => {
+            box.classList.add("opacity-100");
+          }, 0); // retraso para activar transición
         } else {
           box.classList.remove("opacity-100");
           setTimeout(() => box.classList.add("hidden"), 500); // espera a que termine la transición
         }
-        
       }
     </script>
   </body>

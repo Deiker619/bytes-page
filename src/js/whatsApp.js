@@ -6,13 +6,12 @@ const ws = new MutationObserver((mutationsList, observer) => {
       if (wsButton) {
         // Detener el observador después de detectar el componente
         observer.disconnect();
-       // console.log("Componente WhatsApp detectado. Enviando mensaje...");
         wsButton = document.getElementById("wsButton");
 
         wsButton.addEventListener("click", function () {
-          console.log("enviar ws");
-          telefono = "+584120183670";
-          mensaje = "hola";
+          //console.log("enviar ws");
+          telefono = "+584265748462";
+          mensaje = "Quiero saber más información...";
           let url = `https://api.whatsapp.com/send?phone=${telefono}&text=${encodeURIComponent(
             mensaje
           )}`;

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="src/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" type="image/x-icon" href="src/img/iconos/logo_ico.ico">
+    <link rel="icon" type="image/x-icon" href="src/img/iconos/logo_ico.ico" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -18,7 +18,7 @@
 
   <body class="">
     <!-- nav -->
-   <load-component name="nav.html"></load-component>
+    <load-component name="nav.html"></load-component>
 
     <!-- header -->
     <load-component
@@ -65,11 +65,7 @@
           </div>
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex slideleft">
-          <img
-            src="src/img/contenido/resumen.svg"
-            
-            alt="mockup"
-          />
+          <img src="src/img/contenido/resumen.svg" alt="mockup" />
         </div>
       </div>
     </section>
@@ -350,28 +346,23 @@
           onclick="prevSlide()"
           class="absolute left-0 top-1/2 z-1 -translate-y-1/2 text-white px-4 pb-[5rem] rounded"
         >
-          <img
-            src="src/img/carrusel/flechaiz.png"
-            class="h-10"
-            alt=""
-          />
+          <img src="src/img/carrusel/flechaiz.png" class="h-10" alt="" />
         </button>
         <!-- Botón Siguiente -->
         <button
           onclick="nextSlide()"
           class="absolute right-0 top-1/2 -translate-y-1/2 text-white px-4 pb-[5rem] rounded"
         >
-          <img
-            src="src/img/carrusel/flechade.png"
-            class="h-10"
-            alt=""
-          />
+          <img src="src/img/carrusel/flechade.png" class="h-10" alt="" />
         </button>
       </div>
     </section>
     <!-- porcentajes  -->
     <section
-      style="height: 500px; background-image: url('src/img/contenido/imagen_4.png');"
+      style="
+        height: 500px;
+        background-image: url('src/img/contenido/imagen_4.png');
+      "
       class="bg-center relative w-full bg-no-repeat bg-cover mb-8 parallax bg-blend-multiply"
     >
       <div
@@ -396,7 +387,6 @@
               <div class="flex flex-col">
                 <h1
                   class="counter text-5xl tracking-tight leading-none text-white lg:text-5xl font-semibold"
-
                 >
                   95%
                 </h1>
@@ -410,8 +400,7 @@
                 >
                   95%
                 </h1>
-                <p class="text-white">Herramientas de productividad
-                </p>
+                <p class="text-white">Herramientas de productividad</p>
               </div>
             </div>
             <div class="md:col-span-1 col-span-3 flex flex-col">
@@ -421,8 +410,7 @@
                 >
                   95%
                 </h1>
-                <p class="text-white">Análisis de aplicaciones
-                </p>
+                <p class="text-white">Análisis de aplicaciones</p>
               </div>
             </div>
           </div>
@@ -558,8 +546,8 @@
     </section>
     <!-- Motivacion -->
     <section
-    style="background-image: url(src/img/contenido/coafondo.png);"
-      class="bg-center relative h-[450px] w-full bg-no-repeat bg-cover parallax  bg-blend-multiply"
+      style="background-image: url(src/img/contenido/coafondo.png)"
+      class="bg-center relative h-[450px] w-full bg-no-repeat bg-cover parallax bg-blend-multiply"
     >
       <div
         class="absolute top-0 left-0 w-full h-full z-1 bg-[#0397d6ea] opacity-80"
@@ -765,8 +753,9 @@
       </div>
     </section>
 
-    <load-component name="footer/footer.html"></load-component>
+    
 
+    <load-component name="footer/footer.html"></load-component>
 
     <script src="src/js/components.js"></script>
     <script src="src/js/animaciones.js"></script>

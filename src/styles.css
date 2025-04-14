@@ -243,3 +243,28 @@ ul.custom-bullet li::before {
 .navButton.animate {
   animation: navButton 0.5s ease-out forwards;
 }
+
+
+
+@keyframes bg-gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+/* .animate-bg-button{
+  background-size: 200% 200%;
+  animation: bg-gradient-move 5s ease-in-out forwards;
+}
+ */
+.animate-bg {
+  background-size: 200% 200%;
+  animation: bg-gradient-move 5s ease-in-out infinite;
+}

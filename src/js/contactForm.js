@@ -1,3 +1,4 @@
+import {validateName, validateEmail, validatePhone, validateSubject, validateMessage }from "./utils/funciones.js";
 const url = "https://bytespagenewsletter-production.up.railway.app/api/v1/form";
 const form = document.querySelector("#contactForm");
 const Toast = Swal.mixin({
@@ -20,7 +21,7 @@ form.addEventListener("submit", function (event) {
   const telf = document.querySelector("#numberContact");
   const message = document.querySelector("#message");
 
-  formContact = {
+  let formContact = {
     name: name.value.trim(),
     email: email.value.trim(),
     subject: subject.value.trim(),
@@ -28,7 +29,7 @@ form.addEventListener("submit", function (event) {
     message: message.value.trim(),
   };
 
-  formValidate = [];
+  let formValidate = [];
 
   const nameValidate = validateName(formContact.name);
   nameValidate.status === true
@@ -45,7 +46,7 @@ form.addEventListener("submit", function (event) {
     ? clearError(subject)
     : showError(subject, subjectValidate.messageError);
 
-  const phoneValidate = validatePhone(formContact.phone);
+  const phoneValidate = validatePhone(formContact.phone, formContact);
   phoneValidate.status === true
     ? clearError(telf)
     : showError(telf, phoneValidate.messageError);
@@ -67,7 +68,7 @@ form.addEventListener("submit", function (event) {
   isAllValid ? sendDataContact(url, formContact) : false;
 });
 
-function validateName(name) {
+/* function validateName(name) {
   if (/^[A-Za-z\s]+$/.test(name)) {
     return { status: true };
   } else {
@@ -123,18 +124,6 @@ function validateMessage(message) {
   }
 }
 
-function showError(selector, message) {
-  const propError = document.querySelector(`#${selector.id}Error`);
-  //console.log(propError);
-  propError.classList.remove("hidden");
-  propError.textContent = message;
-}
-function clearError(selector) {
-  const propError = document.querySelector(`#${selector.id}Error`);
-  //console.log(propError)
-  propError.classList.add("hidden");
-}
-
 function formatPhoneNumber(number) {
   // Eliminar cualquier carácter no numérico excepto el "+"
   const cleanNumber = number.replace(/[^\d+]/g, "");
@@ -153,6 +142,18 @@ function formatPhoneNumber(number) {
 
   // Retornar el número en el formato esperado
   return `+${match[1]} ${match[2]} ${match[3]} ${match[4]}`;
+}
+ */
+function showError(selector, message) {
+  const propError = document.querySelector(`#${selector.id}Error`);
+  //console.log(propError);
+  propError.classList.remove("hidden");
+  propError.textContent = message;
+}
+function clearError(selector) {
+  const propError = document.querySelector(`#${selector.id}Error`);
+  //console.log(propError)
+  propError.classList.add("hidden");
 }
 
 async function sendDataContact(url, data = null) {

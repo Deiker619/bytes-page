@@ -10,11 +10,11 @@ form_cotizacion.addEventListener("submit", function (event) {
     email: document.querySelector("#email").value.trim(),
     type_program: document.querySelector("#type_program").value.trim(),
     interest_area: document.querySelector("#area").value.trim(),
-    duration: document.querySelector("#duration").value.trim(),
+    //duration: document.querySelector("#duration").value.trim(),
     date_estimated: document.querySelector("#date_estimated").value.trim(),
     message: document.querySelector("#message").value.trim(),
   };
-  //console.log(formInputs);
+  console.log(formInputs);
   if (checkEnterprise.checked) {
     setObjectEnterprise(formInputs); //Setea el objeto de empresa
     console.log('enviando formulario empresa');

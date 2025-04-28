@@ -787,6 +787,10 @@ video {
   margin-left: 4rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .ml-8 {
   margin-left: 2rem;
 }
@@ -833,10 +837,6 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
 }
 
 .block {
@@ -887,10 +887,6 @@ video {
   height: 0.75rem;
 }
 
-.h-3\.5 {
-  height: 0.875rem;
-}
-
 .h-4 {
   height: 1rem;
 }
@@ -925,6 +921,10 @@ video {
 
 .h-8 {
   height: 2rem;
+}
+
+.h-\[100\%\] {
+  height: 100%;
 }
 
 .h-\[20rem\] {
@@ -979,14 +979,6 @@ video {
   height: 1px;
 }
 
-.h-\[100\%\] {
-  height: 100%;
-}
-
-.h-\[\] {
-  height: ;
-}
-
 .max-h-full {
   max-height: 100%;
 }
@@ -1015,10 +1007,6 @@ video {
   width: 0.75rem;
 }
 
-.w-3\.5 {
-  width: 0.875rem;
-}
-
 .w-4 {
   width: 1rem;
 }
@@ -1043,8 +1031,8 @@ video {
   width: 100%;
 }
 
-.w-\[1500px\] {
-  width: 1500px;
+.w-\[1390px\] {
+  width: 1390px;
 }
 
 .w-\[30\%\] {
@@ -1063,8 +1051,28 @@ video {
   width: 100%;
 }
 
+.w-\[1300px\] {
+  width: 1300px;
+}
+
+.w-\[1350px\] {
+  width: 1350px;
+}
+
+.w-\[1px\] {
+  width: 1px;
+}
+
 .w-\[1400px\] {
   width: 1400px;
+}
+
+.w-\[1250px\] {
+  width: 1250px;
+}
+
+.w-\[1200px\] {
+  width: 1200px;
 }
 
 .max-w-2xl {
@@ -2107,10 +2115,6 @@ video {
     flex-grow: 1;
   }
 
-  .sm\:flex-row {
-    flex-direction: row;
-  }
-
   .sm\:justify-center {
     justify-content: center;
   }
@@ -2249,8 +2253,8 @@ video {
     width: 18rem;
   }
 
-  .md\:w-\[100px\] {
-    width: 100px;
+  .md\:w-\[1400px\] {
+    width: 1400px;
   }
 
   .md\:w-\[320px\] {
@@ -2263,14 +2267,6 @@ video {
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:w-\[1300px\] {
-    width: 1300px;
-  }
-
-  .md\:w-\[1400px\] {
-    width: 1400px;
   }
 
   .md\:flex-shrink-0 {
@@ -2529,11 +2525,6 @@ video {
     padding-left: 0px;
     padding-right: 0px;
   }
-}
-
-.rtl\:rotate-180:where([dir="rtl"], [dir="rtl"] *) {
-  --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .rtl\:space-x-reverse:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]) {

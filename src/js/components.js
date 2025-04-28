@@ -21,6 +21,8 @@ class Component extends HTMLElement {
       const subtitle_header = this.getAttribute("subtitle_header");
       const title_header = this.getAttribute("title_header");
       const text_header = this.getAttribute("text_header");
+
+      
       const h1 = this.querySelector("h1");
       const h2 = this.querySelector("h2");
       const p = this.querySelector('p')
